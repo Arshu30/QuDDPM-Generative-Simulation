@@ -1,8 +1,19 @@
 # ⚛️ Quantum Generative AI: Reversing Entropy with QuDDPM
+## 📚 References & Literature Review
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![C++](https://img.shields.io/badge/C++-Benchmark-orange.svg)
-![Status](https://img.shields.io/badge/Status-Simulation_Active-success.svg)
+**Research Papers:**
+* [1] *Denoising Diffusion Probabilistic Models. Advances in Neural Information Processing Systems (NeurIPS).
+* [2] *Diffusion Models Beat GANs on Image Synthesis.
+* [3] *High-Resolution Image Synthesis with Latent Diffusion Models. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
+* [4] *Quantum Diffusion Models. (arXiv:2308.12013).
+* [5] *Enhancing Quantum Diffusion Models for Image Generation.
+* [6] *Measurement-Based Quantum Diffusion Models. (arXiv:2508.08799).
+
+**Lectures & Breakdowns:**
+* 🎥 [DDPM - Diffusion Models Beat GANs on Image Synthesis](https://youtu.be/W-O7AZNzbzQ) (Yannic Kilcher's breakdown of the classical forward/reverse Markov chains).
+* 🎥 [Generative Quantum Machine Learning via Denoising Diffusion Probabilistic Models] (https://youtu.be/zXR9Etnlw-0?si=IGqJEhafO_ziCuHb).
+
+> **Note:** The PDF versions of these research papers are available in the `/references/` directory of this repository for offline review.
 
 ## 📌 Abstract
 This repository contains the simulation code for our **Quantum Denoising Diffusion Probabilistic Model (QuDDPM)** project. We demonstrate how the thermodynamic reversal of entropy used in classical Generative AI (like Stable Diffusion) can be mathematically mapped to Unitary transformations in Hilbert Space.
