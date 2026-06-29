@@ -35,7 +35,8 @@ This repository contains the simulation code for our **Quantum Denoising Diffusi
 
 By replacing classical Gaussian noise with a Quantum Depolarizing Channel, we train a Parameterized Quantum Circuit (PQC) to learn the inverse Unitary operations required to recohere a maximally mixed state back into a pure target state.
 
-## 📂 Repository Structure
+
+# 📂 Repository Structure
 
 ```text
 QuDDPM-Generative-Simulation/
@@ -48,11 +49,12 @@ QuDDPM-Generative-Simulation/
 ├── notebooks/
 │   └── QuDDPM_Walkthrough.ipynb # Mathematical proofs and step-by-step derivations
 │
-├── assets/                     # High-resolution exhibition poster graphics
+├── assets/                     # Refrence research papers
 └── requirements.txt            # Python dependency manifest
-
+```
 
 🧮 The Mathematics (Quantum Fidelity & Gradients)The optimization landscape maximizes the Quantum Fidelity ($F$) between the time-evolved predicted state vector $|\psi(\theta)\rangle$ and the target pure state $|\phi\rangle$:$$F(\rho, \sigma) = \left( \text{Tr} \sqrt{\sqrt{\rho}\sigma\sqrt{\rho}} \right)^2$$Because classical automatic differentiation cannot be evaluated directly on physical quantum processors, the exact analytical gradient with respect to the gate parameter $\theta$ is computed using the Parameter-Shift Rule:$$\frac{\partial F}{\partial \theta} = \frac{1}{2} \left[ F\left(\theta + \frac{\pi}{2}\right) - F\left(\theta - \frac{\pi}{2}\right) \right]$$The parameter updates are then applied iteratively via gradient ascent:$$\theta \leftarrow \theta + \eta \frac{\partial F}{\partial \theta}$$
+
 
 💻 Execution Instructions
 1. Classical Matrix Complexity Benchmark
